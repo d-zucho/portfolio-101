@@ -1,9 +1,26 @@
 import './App.css'
+//? Component Imports Start
+import Header from './components/header/Header'
+import Nav from './components/nav/Nav'
+import About from './components/about/About'
+import Experience from './components/experience/Experience'
+import Services from './components/services/Services'
+import Portfolio from './components/portfolio/Portfolio'
+import Testimonials from './components/testimonials/Testimonials'
+import Contact from './components/contact/Contact'
+//? Component Import End
 
 function App() {
   return (
     <div className='App'>
-      <h1>react portfolio!!!!</h1>
+      <Header />
+      <Nav />
+      <About />
+      <Experience />
+      <Services />
+      <Portfolio />
+      <Testimonials />
+      <Contact />
     </div>
   )
 }
