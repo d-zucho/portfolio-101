@@ -1,7 +1,11 @@
 import './experience.style.css'
 
 const Experience = () => {
-  return <div>Experience</div>
+  return (
+    <section id='experience'>
+      <p>experience</p>
+    </section>
+  )
 }
 
 export default Experience

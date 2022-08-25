@@ -1,7 +1,11 @@
 import './services.style.css'
 
 const Services = () => {
-  return <div>Services</div>
+  return (
+    <section id='services'>
+      <p>services</p>
+    </section>
+  )
 }
 
 export default Services

@@ -1,7 +1,11 @@
 import './about.style.css'
 
 const About = () => {
-  return <div>About</div>
+  return (
+    <section id='about'>
+      <p>about</p>
+    </section>
+  )
 }
 
 export default About
