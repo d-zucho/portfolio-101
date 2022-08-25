@@ -1,9 +1,82 @@
 import './portfolio.style.css'
+import IMG1 from '../../assets/portfolio1.jpg'
+import IMG2 from '../../assets/portfolio2.jpg'
+import IMG3 from '../../assets/portfolio3.jpg'
+import IMG4 from '../../assets/portfolio4.jpg'
+import IMG5 from '../../assets/portfolio5.png'
+import IMG6 from '../../assets/portfolio6.jpg'
+
+const projectImages = [
+  {
+    id: 1,
+    image: IMG1,
+    title: 'Crypto Currency Tracker',
+    github: 'https://github.com',
+    demo: 'https://github.com',
+  },
+  {
+    id: 2,
+    image: IMG2,
+    title: 'Charts Templates & Infographics in Figma',
+    github: 'https://github.com',
+    demo: 'https://github.com',
+  },
+  {
+    id: 3,
+    image: IMG3,
+    title: 'Dashboard UI Kit for Data Design App',
+    github: 'https://github.com',
+    demo: 'https://github.com',
+  },
+  {
+    id: 4,
+    image: IMG4,
+    title: 'Maintaining Tasks & Projects',
+    github: 'https://github.com',
+    demo: 'https://github.com',
+  },
+  {
+    id: 5,
+    image: IMG5,
+    title: 'Financial Data & Organizer',
+    github: 'https://github.com',
+    demo: 'https://github.com',
+  },
+  {
+    id: 6,
+    image: IMG6,
+    title: 'UI/UX Kit forData Visualization',
+    github: 'https://github.com',
+    demo: 'https://github.com',
+  },
+]
 
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h1>portfolio</h1>
+      <h5>My Recent Work</h5>
+      <h2>Portfolio</h2>
+
+      <div className='container portfolio__container'>
+        {/* Project Items */}
+
+        {projectImages.map(({ id, image, title, github, demo }) => (
+          <article key={id} className='portfolio__item'>
+            <div className='portfolio__item-img'>
+              <img src={image} alt={title} />
+            </div>
+            <h3>{title}</h3>
+            <div className='portfolio__item-cta'>
+              <a href={github} className='btn' target='_blank'>
+                Github
+              </a>
+              <a href={demo} className='btn' target='_blank'>
+                Live Demo
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
     </section>
   )
 }
