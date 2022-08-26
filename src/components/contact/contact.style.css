@@ -1,3 +1,26 @@
 #contact {
   height: 100vh;
 }
+
+.contact__option {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--color-bg-varient);
+  width: fit-content;
+  padding: 2rem;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  margin: 0 0 1rem;
+}
+
+.contact__option:hover {
+  border-color: var(--color-primary);
+  background: transparent;
+}
+
+.email__container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
-  /* place-content: center; */
+  place-content: center;
 }
 
 .portfolio__item {
