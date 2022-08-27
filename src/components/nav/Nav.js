@@ -4,6 +4,7 @@ import { AiOutlineUser } from 'react-icons/ai'
 import { BiBook } from 'react-icons/bi'
 import { RiServiceLine } from 'react-icons/ri'
 import { BiMessageSquareDetail } from 'react-icons/bi'
+import { GiOpenBook } from 'react-icons/gi'
 
 import { useState } from 'react'
 
@@ -43,6 +44,14 @@ const Nav = () => {
         className={activeNav === '#services' ? 'active' : ''}
         onClick={() => setActiveNav('#services')}>
         <RiServiceLine />
+      </a>
+
+      {/** Portfolio */}
+      <a
+        href='#portfolio'
+        className={activeNav === '#portfolio' ? 'active' : ''}
+        onClick={() => setActiveNav('#portfolio')}>
+        <GiOpenBook />
       </a>
 
       {/** contact */}
